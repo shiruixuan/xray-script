@@ -157,8 +157,8 @@ cat > ~/xray/config/config.json<<-EOF
                     "alpn": ["http/1.1", "h2"],
                     "certificates": [
                         {
-                            "certificateFile": "/etc/xray/bitdc.top.pem",
-                            "keyFile": "/etc/xray/bitdc.top.key"
+                            "certificateFile": "/etc/xray/$DOMAIN.pem",
+                            "keyFile": "/etc/xray/$DOMAIN.key"
                         }
                     ]
                 }
@@ -203,8 +203,8 @@ cat > ~/xray/config/config.json<<-EOF
                     "alpn": ["http/1.1", "h2"],
                     "certificates": [
                         {
-                            "certificateFile": "/etc/xray/bitdc.top.pem",
-                            "keyFile": "/etc/xray/bitdc.top.key"
+                            "certificateFile": "/etc/xray/$DOMAIN.pem",
+                            "keyFile": "/etc/xray/$DOMAIN.key"
                         }
                     ]
                 }
@@ -249,8 +249,8 @@ cat > ~/xray/config/config.json<<-EOF
                     "alpn": ["http/1.1", "h2"],
                     "certificates": [
                         {
-                            "certificateFile": "/etc/xray/bitdc.top.pem",
-                            "keyFile": "/etc/xray/bitdc.top.key"
+                            "certificateFile": "/etc/xray/$DOMAIN.pem",
+                            "keyFile": "/etc/xray/$DOMAIN.key"
                         }
                     ]
                 }
@@ -295,8 +295,8 @@ cat > ~/xray/config/config.json<<-EOF
                     "alpn": ["http/1.1", "h2"],
                     "certificates": [
                         {
-                            "certificateFile": "/etc/xray/bitdc.top.pem",
-                            "keyFile": "/etc/xray/bitdc.top.key"
+                            "certificateFile": "/etc/xray/$DOMAIN.pem",
+                            "keyFile": "/etc/xray/$DOMAIN.key"
                         }
                     ]
                 }
