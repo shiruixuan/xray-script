@@ -92,7 +92,7 @@ docker run -d --net=host --name=nginx --restart=always -v ~/nginx/nginx.conf:/et
 
 bash <(curl -fsSL https://raw.githubusercontent.com/P3TERX/warp.sh/main/warp.sh) proxy
 
-cat > ~/v2ray/config/config.json<<-EOF
+cat > ~/xray/config/config.json<<-EOF
 {
     "stats": {},
     "log": {
