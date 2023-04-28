@@ -90,12 +90,12 @@ EOF
 
 docker run -d --net=host --name=nginx --restart=always -v ~/nginx/nginx.conf:/etc/nginx/nginx.conf -v ~/nginx/conf.d:/etc/nginx/conf.d nginx
 
-cat > ~/v2ray/config/config.json<<-EOF
+cat > ~/xray/config/config.json<<-EOF
 {
     "stats": {},
     "log": {
-        "access": "/var/log/v2ray/access.log",
-        "error": "/var/log/v2ray/error.log",
+        "access": "/var/log/xray/access.log",
+        "error": "/var/log/xray/error.log",
         "loglevel": "warning"
     },
     "api": {
