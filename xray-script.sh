@@ -1,5 +1,5 @@
 #!/bin/bash
-# xray一键安装脚本
+# Xray一键安装脚本
 # Author: shiruixuan<https://github.com/shiruixuan>
 
 
