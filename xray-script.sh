@@ -168,7 +168,7 @@ cat > ~/xray/config/config.json<<-EOF
             "settings": {
                 "clients": [
                     {
-                        "email": "user1",
+                        "email": "user2",
                         "id": "a1521187-6faa-412d-861d-cccf29c621f2",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
@@ -207,7 +207,7 @@ cat > ~/xray/config/config.json<<-EOF
             "settings": {
                 "clients": [
                     {
-                        "email": "user1",
+                        "email": "user3",
                         "id": "a1521187-6faa-412d-861d-cccf29c621f3",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
@@ -246,7 +246,7 @@ cat > ~/xray/config/config.json<<-EOF
             "settings": {
                 "clients": [
                     {
-                        "email": "user1",
+                        "email": "user4",
                         "id": "a1521187-6faa-412d-861d-cccf29c621f4",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
@@ -285,7 +285,7 @@ cat > ~/xray/config/config.json<<-EOF
             "settings": {
                 "clients": [
                     {
-                        "email": "user1",
+                        "email": "user5",
                         "id": "a1521187-6faa-412d-861d-cccf29c621f5",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
@@ -324,7 +324,7 @@ cat > ~/xray/config/config.json<<-EOF
             "settings": {
                 "clients": [
                     {
-                        "email": "user1",
+                        "email": "user6",
                         "id": "a1521187-6faa-412d-861d-cccf29c621f6",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
@@ -363,7 +363,7 @@ cat > ~/xray/config/config.json<<-EOF
             "settings": {
                 "clients": [
                     {
-                        "email": "user1",
+                        "email": "user7",
                         "id": "a1521187-6faa-412d-861d-cccf29c621f7",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
@@ -402,7 +402,7 @@ cat > ~/xray/config/config.json<<-EOF
             "settings": {
                 "clients": [
                     {
-                        "email": "user1",
+                        "email": "user8",
                         "id": "a1521187-6faa-412d-861d-cccf29c621f8",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
