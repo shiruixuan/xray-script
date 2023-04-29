@@ -319,7 +319,7 @@ cat > ~/xray/config/config.json<<-EOF
             }
         },
         {
-            "port": 296161,
+            "port": 29661,
             "protocol": "vless",
             "settings": {
                 "clients": [
