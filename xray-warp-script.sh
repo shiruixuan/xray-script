@@ -126,13 +126,13 @@ cat > ~/xray/config/config.json<<-EOF
     },
     "inbounds": [
         {
-            "port": 29545,
+            "port": 29611,
             "protocol": "vless",
             "settings": {
                 "clients": [
                     {
                         "email": "user1",
-                        "id": "a1521187-6faa-412d-861d-cccf29c6217f",
+                        "id": "a1521187-6faa-412d-861d-cccf29c621f1",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
                     }
@@ -172,13 +172,13 @@ cat > ~/xray/config/config.json<<-EOF
             }
         },
         {
-            "port": 29546,
+            "port": 29621,
             "protocol": "vless",
             "settings": {
                 "clients": [
                     {
-                        "email": "user2",
-                        "id": "a1521187-6faa-412d-861d-cccf29c6217f",
+                        "email": "user1",
+                        "id": "a1521187-6faa-412d-861d-cccf29c621f2",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
                     }
@@ -218,13 +218,13 @@ cat > ~/xray/config/config.json<<-EOF
             }
         },
         {
-            "port": 29547,
+            "port": 29631,
             "protocol": "vless",
             "settings": {
                 "clients": [
                     {
-                        "email": "user3",
-                        "id": "a1521187-6faa-412d-861d-cccf29c6217f",
+                        "email": "user1",
+                        "id": "a1521187-6faa-412d-861d-cccf29c621f3",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
                     }
@@ -264,13 +264,197 @@ cat > ~/xray/config/config.json<<-EOF
             }
         },
         {
-            "port": 29548,
+            "port": 29641,
             "protocol": "vless",
             "settings": {
                 "clients": [
                     {
-                        "email": "user4",
-                        "id": "a1521187-6faa-412d-861d-cccf29c6217f",
+                        "email": "user1",
+                        "id": "a1521187-6faa-412d-861d-cccf29c621f4",
+                        "level": 1,
+                        "flow": "xtls-rprx-direct"
+                    }
+                ],
+                "decryption": "none",
+                "fallbacks": [
+                    {
+                        "alpn": "http/1.1",
+                        "dest": 80
+                    },
+                    {
+                        "alpn": "h2",
+                        "dest": 81
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "xtls",
+                "xtlsSettings": {
+                    "serverName": "$DOMAIN",
+                    "alpn": ["http/1.1", "h2"],
+                    "certificates": [
+                        {
+                            "certificateFile": "/etc/xray/$DOMAIN.pem",
+                            "keyFile": "/etc/xray/$DOMAIN.key"
+                        }
+                    ]
+                }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ]
+            }
+        },
+        {
+            "port": 29651,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "email": "user1",
+                        "id": "a1521187-6faa-412d-861d-cccf29c621f5",
+                        "level": 1,
+                        "flow": "xtls-rprx-direct"
+                    }
+                ],
+                "decryption": "none",
+                "fallbacks": [
+                    {
+                        "alpn": "http/1.1",
+                        "dest": 80
+                    },
+                    {
+                        "alpn": "h2",
+                        "dest": 81
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "xtls",
+                "xtlsSettings": {
+                    "serverName": "$DOMAIN",
+                    "alpn": ["http/1.1", "h2"],
+                    "certificates": [
+                        {
+                            "certificateFile": "/etc/xray/$DOMAIN.pem",
+                            "keyFile": "/etc/xray/$DOMAIN.key"
+                        }
+                    ]
+                }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ]
+            }
+        },
+        {
+            "port": 29661,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "email": "user1",
+                        "id": "a1521187-6faa-412d-861d-cccf29c621f6",
+                        "level": 1,
+                        "flow": "xtls-rprx-direct"
+                    }
+                ],
+                "decryption": "none",
+                "fallbacks": [
+                    {
+                        "alpn": "http/1.1",
+                        "dest": 80
+                    },
+                    {
+                        "alpn": "h2",
+                        "dest": 81
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "xtls",
+                "xtlsSettings": {
+                    "serverName": "$DOMAIN",
+                    "alpn": ["http/1.1", "h2"],
+                    "certificates": [
+                        {
+                            "certificateFile": "/etc/xray/$DOMAIN.pem",
+                            "keyFile": "/etc/xray/$DOMAIN.key"
+                        }
+                    ]
+                }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ]
+            }
+        },
+        {
+            "port": 29671,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "email": "user1",
+                        "id": "a1521187-6faa-412d-861d-cccf29c621f7",
+                        "level": 1,
+                        "flow": "xtls-rprx-direct"
+                    }
+                ],
+                "decryption": "none",
+                "fallbacks": [
+                    {
+                        "alpn": "http/1.1",
+                        "dest": 80
+                    },
+                    {
+                        "alpn": "h2",
+                        "dest": 81
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "xtls",
+                "xtlsSettings": {
+                    "serverName": "$DOMAIN",
+                    "alpn": ["http/1.1", "h2"],
+                    "certificates": [
+                        {
+                            "certificateFile": "/etc/xray/$DOMAIN.pem",
+                            "keyFile": "/etc/xray/$DOMAIN.key"
+                        }
+                    ]
+                }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ]
+            }
+        },
+        {
+            "port": 29681,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "email": "user1",
+                        "id": "a1521187-6faa-412d-861d-cccf29c621f8",
                         "level": 1,
                         "flow": "xtls-rprx-direct"
                     }
